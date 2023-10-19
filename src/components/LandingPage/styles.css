@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    background-color: #071629;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* height: fit-content; */
+    overflow: hidden;
+    /* z-index: 10; */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 60vw;
+}
+
+.moon {
+    position: absolute;
+    height: 35rem;
+    z-index: 1;
+}
+
+.glow {
+    position: absolute;
+    height: 120rem;
+    z-index: 2;
+}
+
+.text__h1 {
+    color: white;
+    font-size: 10rem;
+    line-height: 0.9;
+}
+
+.text__p {
+    color: white;
+    margin-top: 5rem;
+}
+
+.cloud_1 {
+    z-index: 4;
+    height: 20rem;
+    margin-left: -40vw;
+    margin-bottom: -40vh;
+}
+
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 2s infinite;
+}
+
+
+@keyframes twinkle {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}

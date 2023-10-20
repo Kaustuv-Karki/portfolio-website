@@ -1,0 +1,57 @@
+.open-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0a1e38;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle-1 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #071629;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.circle-2 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #071629;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+.circle-3 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #071629;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+.circle-4 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #071629;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
+
+.circle-5 {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #071629;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

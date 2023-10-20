@@ -14,7 +14,7 @@
 .text {
     display: flex;
     flex-direction: column;
-    min-width: 20rem;
+    min-width: 30rem;
 }
 
 .main-container {
@@ -41,13 +41,18 @@
 
 .text__h1 {
     color: white;
-    font-size: 10rem;
+    font-size: 8rem;
     line-height: 0.9;
+    font-family: 'Paytone One', sans-serif;
+    margin-left: 2rem;
 }
 
 .text__p {
     color: white;
     margin-top: 5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    font-family: 'El Messiri', sans-serif;
 }
 
 .cloud_1 {

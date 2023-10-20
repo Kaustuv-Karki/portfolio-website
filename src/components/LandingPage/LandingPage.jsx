@@ -3,9 +3,25 @@ import Glow from '../../assets/GlowFinal.png'
 import Cloud from '../../assets/Union.png'
 import './styles.css'
 import TwinklingStars from '../Stars/TwinklingStars'
+import { useEffect, useState } from 'react'
+import Opening from '../Opening/Opening'
+import {motion} from 'framer-motion'
 
 const LandingPage = () => {
+  const [showOpening, setShowOpening] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowOpening(false);
+    }, 900);
+    return () => clearTimeout(timer);
+  },[])
+
+  console.log(showOpening)
+
   return (
+    <>
+    {showOpening ? <Opening/> :
     <div className='container'>
       <TwinklingStars/>
       <div className="text">
@@ -16,8 +32,18 @@ const LandingPage = () => {
         <img src={Moon} className='moon'/>
         <img  src={Glow} className='glow'/>
     </div>
-    <img src={Cloud} className='cloud_1'/>
+    <motion.img         
+      initial={{ x: -80, y: -10 }} // Initial position (move 100 pixels to the left)
+      animate={{ x: 80 , y : 10}} // Final position (move 100 pixels to the right)
+      transition={{ 
+        duration: 10,
+        repeat: Infinity,
+        repeatType: 'mirror'
+      }}
+      src={Cloud} className='cloud_1'/>
     </div>
+  }
+    </>
   )
 }
 

@@ -6,6 +6,8 @@ import TwinklingStars from '../Stars/TwinklingStars'
 import { useEffect, useState } from 'react'
 import Opening from '../Opening/Opening'
 import {motion} from 'framer-motion'
+// import {MdArrowDownward} from 'react-icons/md'
+import { FaArrowDown } from "react-icons/fa";
 
 const LandingPage = () => {
   const [showOpening, setShowOpening] = useState(true)
@@ -29,7 +31,9 @@ const LandingPage = () => {
         animate={{x:0}}
         transition={{ 
         duration: 2,
-       ease: [0.16, 1, 0.3, 1]}}
+       ease: [0.16, 1, 0.3, 1],
+       delay:0.7
+      }}
       className="text">
       <h1 className='text__h1'>Kaustuv Karki</h1>
       <p className='text__p'>SOFTWARE DEVELOPER / DESIGNER</p>
@@ -64,10 +68,7 @@ const LandingPage = () => {
       }}
       src={Cloud} className='cloud_1'/>
       </motion.div>
-      <motion.div className='scroll' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:2, delay: 0.8}}>
-        <motion.div className="circle" initial={{y: 0, opacity:1}} animate={{y:"30px", opacity:0.2 }} transition={{duration:1.2, repeat: Infinity, repeatType: "loop"
-        }}></motion.div>
-      </motion.div>
+      <FaArrowDown className='scroll' />
     </div>
   }
     </>

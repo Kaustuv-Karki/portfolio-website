@@ -24,13 +24,16 @@
 .skill-main {
     display: flex;
     flex-direction: column;
+    margin: 0 2rem;
+    /* flex-wrap: wrap; */
     /* justify-content: center;
     align-items: center; */
-    width: 800px;
+    /* min-width: 800px; */
 }
 
 .skill-frontend {
     margin-bottom: 4rem;
+    min-width: 200px;
 }
 
 
@@ -43,6 +46,7 @@
 
 .skill-subcontainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skill-button {
@@ -64,4 +68,37 @@
     background-color: #025A4E;
     color: white;
     font-size: 1.3rem;
+}
+
+
+@media (max-width: 700px) {
+    .skill-h1 {
+        font-size: 4rem;
+        padding-top: 2rem;
+    }
+
+    .skill-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .skill-button {
+        height: 2rem;
+        width: 9rem;
+        margin: 20px;
+        display: flex;
+        font-size: 1rem;
+    }
+
+
+    .skill-main {
+        width: 400px;
+    }
+
+    .skill-frontend {
+        margin-bottom: 1.2rem
+    }
+
+    .skill-button:hover {
+        font-size: 1.1rem;
+    }
 }

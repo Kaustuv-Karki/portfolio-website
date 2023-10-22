@@ -68,7 +68,9 @@ const LandingPage = () => {
       }}
       src={Cloud} className='cloud_1'/>
       </motion.div>
+      <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5}}>
       <FaArrowDown className='scroll' />
+      </motion.div>
     </div>
   }
     </>

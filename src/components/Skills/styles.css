@@ -1,0 +1,67 @@
+.skill-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDE7DE;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title {
+    margin-top: 10px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.skill-h1 {
+    padding-top: 3rem;
+    font-family: "El Messiri", "sans-serif";
+    font-weight: 700;
+    font-size: 6rem;
+    color: #025A4E;
+}
+
+.skill-main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    width: 800px;
+}
+
+.skill-frontend {
+    margin-bottom: 4rem;
+}
+
+
+.skill-subtitle {
+    color: #025A4E;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    /* text-decoration: underline; */
+}
+
+.skill-subcontainer {
+    display: flex;
+}
+
+.skill-button {
+    height: 3rem;
+    width: 10rem;
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #025A4E;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 800ms;
+}
+
+.skill-button:hover {
+    background-color: #025A4E;
+    color: white;
+    font-size: 1.3rem;
+}

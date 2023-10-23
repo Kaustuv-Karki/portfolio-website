@@ -1,0 +1,16 @@
+.footer-container {
+    background-color: #071629;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+
+.email {
+    color: white;
+    font-size: 3rem;
+    font-family: "Paytone One";
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5rem;
+}

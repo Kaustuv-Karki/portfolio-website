@@ -1,0 +1,53 @@
+.main-project {
+    background-color: #071629;
+    height: fit-content;
+}
+
+
+.main-title {
+    font-family: 'El Messiri', sans-serif;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 5rem;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.project-odd {
+    width: 60rem;
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+}
+
+.odd-text {
+    margin-left: 1.5rem;
+}
+
+img {
+    height: 300px;
+
+}
+
+.project-even {
+    width: 60rem;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}

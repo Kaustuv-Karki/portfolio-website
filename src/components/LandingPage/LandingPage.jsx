@@ -1,6 +1,6 @@
-import Moon from "../../assets/Moon.png";
+import Moon from "../../assets/Moon.svg";
 import Glow from "../../assets/GlowFinal.png";
-import Cloud from "../../assets/Union.png";
+import Cloud from "../../assets/Union.svg";
 import "./styles.css";
 import TwinklingStars from "../Stars/TwinklingStars";
 import { useEffect, useState } from "react";

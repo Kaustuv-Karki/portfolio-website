@@ -1,56 +1,20 @@
-import './styles.css'
-import Project1 from '../../assets/project-images/project-1.png'
+import Project1 from "../../assets/project-images/project-1.png";
+import ProjectCard from "./ProjectCard";
 
 const ProjectPage = () => {
   return (
-    <div className='main-project'>
-        <h1 className='main-title'>Projects</h1>
-        <div className="centered">
-        <div className='project-container'>
-            <div className='project-odd'>
-                <img src={Project1}/>
-                <div className='odd-text'>
-                    <h1>Project title</h1>
-                    <div>
-                        Project Stacks
-                    </div>
-                    <p>Project description</p>
-                </div>
-            </div>
-            <div className='project-even'>
-                <div>
-                    <h1>Project title</h1>
-                    <div>
-                        Project Stacks
-                    </div>
-                    <p>Project description</p>
-                </div>
-                <img src={Project1}/>
-            </div>
-            <div className='project-odd'>
-                <img src={Project1}/>
-                <div className='odd-text'>
-                    <h1>Project title</h1>
-                    <div>
-                        Project Stacks
-                    </div>
-                    <p>Project description</p>
-                </div>
-            </div>
-            <div className='project-even'>
-                <div>
-                    <h1>Project title</h1>
-                    <div>
-                        Project Stacks
-                    </div>
-                    <p>Project description</p>
-                </div>
-                <img src={Project1}/>
-            </div>
-        </div>
-        </div>
+    <div className="main-project">
+      <h1>Projects</h1>
+      <ProjectCard
+        name="Project 1"
+        tags="React, CSS, HTML"
+        github="This"
+        liveSite="This"
+        image={Project1}
+        description="This is test description"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectPage
+export default ProjectPage;

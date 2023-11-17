@@ -1,3 +1,8 @@
+.full{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .container {
     display: flex;
     background-color: #071629;

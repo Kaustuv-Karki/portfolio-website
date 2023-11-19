@@ -1,8 +1,6 @@
-import React from "react";
 import "./styles.css";
 import { MdArrowOutward } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({ name, tags, github, liveSite, image, description }) => {
   return (

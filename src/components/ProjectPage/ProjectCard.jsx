@@ -1,19 +1,40 @@
 import React from "react";
 import "./styles.css";
+import { MdArrowOutward } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ name, tags, github, liveSite, image, description }) => {
   return (
     <div className="project-card">
       <div className="project-image">
         <img src={image} alt="" />
+      </div>
+      <div className="project-content">
+        <h1>{name}</h1>
+        <p className="description">{description}</p>
+        <div className="all-tags">
+          {tags.map((tag, index) => (
+            <p className="tags" key={index}>
+              {tag}
+            </p>
+          ))}
+        </div>
         <div className="sites">
-          <h2>{github}</h2>
-          <h2>{liveSite}</h2>
+          <a href={github} target="_blank" rel="noreferrer">
+            <div className="icons">
+              <p>Github</p>
+              <FiGithub />
+            </div>
+          </a>
+          <a href="">
+            <div className="icons">
+              <p>Live Site</p>
+              <MdArrowOutward />
+            </div>
+          </a>
         </div>
       </div>
-      <h1>{name}</h1>
-      <h2>{tags}</h2>
-      <p>{description}</p>
     </div>
   );
 };

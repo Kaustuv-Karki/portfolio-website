@@ -5,14 +5,24 @@ const ProjectPage = () => {
   return (
     <div className="main-project">
       <h1>Projects</h1>
-      <ProjectCard
-        name="Project 1"
-        tags="React, CSS, HTML"
-        github="This"
-        liveSite="This"
-        image={Project1}
-        description="This is test description"
-      />
+      <div className="projects">
+        <ProjectCard
+          name="Project 1"
+          tags={["React", "CSS", "HTML"]}
+          github="https://github.com"
+          liveSite="This"
+          image={Project1}
+          description="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+        <ProjectCard
+          name="Project 1"
+          tags={["React", "CSS", "HTML"]}
+          github="https://github.com"
+          liveSite="This"
+          image={Project1}
+          description="This is test description"
+        />
+      </div>
     </div>
   );
 };

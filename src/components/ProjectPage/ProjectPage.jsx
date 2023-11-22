@@ -1,4 +1,4 @@
-import Project1 from "../../assets/project-images/project-1.png";
+import Project1 from "../../../public/Images/project-images/project-1.png";
 import ProjectCard from "./ProjectCard";
 
 const ProjectPage = () => {

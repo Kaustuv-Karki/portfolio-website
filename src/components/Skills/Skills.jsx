@@ -1,10 +1,10 @@
 import "./styles.css";
 import CPlus from "../../../public/Images/Skills/c++.png";
 import Figma from "../../../public/Images/Skills/figma.png";
-import C from "../../../public/Images/Skills/C.png";
+import C from "../../../public/Images/Skills/c.png";
 import HTML from "../../../public/Images/Skills/HTML.png";
 import CSS from "../../../public/Images/Skills/CSS.png";
-import Python from "../../../public/Images/Skills/python.png";
+import Python from "../../../public/Images/Skills/PYTHON.png";
 import JS from "../../../public/Images/Skills/JS.png";
 import Github from "../../../public/Images/Skills/github.png";
 import Illustrator from "../../../public/Images/Skills/illustrator.png";

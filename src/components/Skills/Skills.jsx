@@ -1,5 +1,5 @@
 import "./styles.css";
-import CPlus from "../../../public/Images/Skills/C++.png";
+import CPlus from "../../../public/Images/Skills/c++.png";
 import Figma from "../../../public/Images/Skills/figma.png";
 import C from "../../../public/Images/Skills/C.png";
 import HTML from "../../../public/Images/Skills/HTML.png";

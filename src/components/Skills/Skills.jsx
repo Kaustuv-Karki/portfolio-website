@@ -3,7 +3,7 @@ import CPlus from "../../../public/Images/Skills/c++.png";
 import Figma from "../../../public/Images/Skills/figma.png";
 import C from "../../../public/Images/Skills/c.png";
 import HTML from "../../../public/Images/Skills/HTML.png";
-import CSS from "../../../public/Images/Skills/CSS.png";
+import CSS from "../../../public/Images/Skills/css.png";
 import Python from "../../../public/Images/Skills/PYTHON.png";
 import JS from "../../../public/Images/Skills/JS.png";
 import Github from "../../../public/Images/Skills/github.png";

@@ -138,20 +138,37 @@
     border-radius: 50%;
 }
 
+@media (max-width: 1000px) {
+    .moon{
+        margin-left: -10rem;
+    }
+    .glow{
+        margin-left: -10rem;
+    }
+    .cloud_1 {
+        margin-left: -30rem;
+        /* Adjust for smaller screens */
+    }
+}
+
 @media (max-width: 768px) {
     .text {
         min-width: 20rem;
-        margin-top: -10rem;
+        margin-top: -15rem;
         /* Adjust for smaller screens */
     }
 
     .moon {
         height: 20rem;
+        margin-left: -1rem;
+        margin-top: 2rem;
         /* Adjust for smaller screens */
     }
 
     .glow {
         height: 50rem;
+        margin-left: -1rem;
+        margin-top: 2rem;
         /* Adjust for smaller screens */
     }
 
@@ -173,7 +190,7 @@
 
     .cloud_1 {
         height: 10rem;
-        margin-right: -10px;
+        margin-left: -10rem;
         margin-bottom: -50px;
         /* Adjust for smaller screens */
     }

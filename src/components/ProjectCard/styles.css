@@ -1,0 +1,50 @@
+.projectcard__main{
+    padding: 2rem 1.5rem;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectcard__image{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.projectcard__header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+}
+
+.projectcard__header > h2{
+    font-size: 2rem;
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+} 
+
+.projectcard__header > p {
+    font-size: 1rem;
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.projectcard__description{
+    color: lightgray;
+    font-size: 0.7rem;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-bottom: 0.5rem;
+}
+
+.projectcard__stacks{
+    font-family: 'El Messiri' , sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+    padding-bottom: 0.5rem;
+}

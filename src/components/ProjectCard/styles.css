@@ -48,3 +48,20 @@
     color: white;
     padding-bottom: 0.5rem;
 }
+
+.projectcard__iconimage{
+    height: 20px;
+    cursor: pointer;
+}
+
+.projectcard__icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projectcard__iconinside{
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}

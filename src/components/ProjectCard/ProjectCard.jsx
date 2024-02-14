@@ -1,5 +1,7 @@
 import './styles.css'
 import Project from '../../assets/project-images/project-1.png'
+import { IoOpenOutline } from "react-icons/io5";
+import Github from '../../../public/Images/Skills/github_white.png'
 const ProjectCard = () => {
   return (
     <div className='projectcard__main'>
@@ -7,7 +9,14 @@ const ProjectCard = () => {
       <div className='projectcard__text'>
         <div className='projectcard__header'>
           <h2>Project Title</h2>
-          <p>Github, Demo</p>
+          <div className="projectcard__icons">
+            <a href='https://www.github.com' target='_blank' rel='noreferrer'>
+              <img className='projectcard__iconimage' src={Github} alt='github' />
+            </a>
+            <a className='projectcard__iconinside' href='https://www.github.com' target='_blank' rel='noreferrer'>
+              <IoOpenOutline />
+            </a>
+          </div>
         </div>
         <p className='projectcard__stacks'>Project Description</p>
         <p className='projectcard__description'>

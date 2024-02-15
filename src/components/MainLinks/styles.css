@@ -1,0 +1,29 @@
+.mainlinks__main{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 50;
+    cursor: pointer;
+}
+
+.mainlinks__cv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.mainlinks__icons{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.mainlinks__cv > p{
+    color: white;
+    font-family: 'El Messiri', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

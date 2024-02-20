@@ -1,8 +1,8 @@
 .projectcard__main{
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
     width: 90%;
-    max-width: 500px;
-    height: 600px;
+    max-width: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     cursor: pointer;

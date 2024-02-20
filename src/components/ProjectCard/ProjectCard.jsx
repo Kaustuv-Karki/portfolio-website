@@ -2,15 +2,15 @@ import "./styles.css";
 import Project from "../../assets/project-images/project-1.png";
 import { IoOpenOutline } from "react-icons/io5";
 import Github from "../../../public/Images/Skills/github_white.png";
-const ProjectCard = () => {
+const ProjectCard = ({ project, imgUrl }) => {
   return (
     <div className="projectcard__main">
-      <img className="projectcard__image" src={Project} alt="project" />
+      <img className="projectcard__image" src={imgUrl} alt="project" />
       <div className="projectcard__text">
         <div className="projectcard__header">
-          <h2>Project Title</h2>
+          <h2>{project?.title}</h2>
           <div className="projectcard__icons">
-            <a href="https://www.github.com" target="_blank" rel="noreferrer">
+            <a href={project?.codeLink} target="_blank" rel="noreferrer">
               <img
                 className="projectcard__iconimage"
                 src={Github}
@@ -19,20 +19,23 @@ const ProjectCard = () => {
             </a>
             <a
               className="projectcard__iconinside"
-              href="https://www.github.com"
+              href={project?.projectLink}
               target="_blank"
               rel="noreferrer">
               <IoOpenOutline />
             </a>
           </div>
         </div>
-        <p className="projectcard__stacks">Project Description</p>
-        <p className="projectcard__description">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet id
-          itaque voluptate laboriosam, tenetur inventore blanditiis iste.
-          Asperiores id, fuga maiores obcaecati doloremque perferendis ad illo
-          unde deserunt odio omnis.
+        <p className="projectcard__stacks">
+          {project?.tags.map((tag, index) => {
+            return (
+              <span key={index} className="projectcard__stack">
+                {tag} {index < project.tags.length - 1 && ","} &nbsp;
+              </span>
+            );
+          })}
         </p>
+        <p className="projectcard__description">{project?.description}</p>
       </div>
     </div>
   );

@@ -9,8 +9,18 @@ const Footer = () => {
         karkikaustuv@gmail.com
       </a>
       <div className="social-icons">
-        <BsLinkedin />
-        <AiFillGithub />
+        <a
+          href="https://www.linkedin.com/in/kaustuvkarki/"
+          target="_blank"
+          rel="noreferrer">
+          <BsLinkedin />
+        </a>
+        <a
+          href="https://github.com/Kaustuv-Karki"
+          target="_blank"
+          rel="noreferrer">
+          <AiFillGithub className="github__icon" />
+        </a>
       </div>
     </div>
   );

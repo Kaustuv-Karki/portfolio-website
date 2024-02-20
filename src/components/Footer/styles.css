@@ -16,6 +16,15 @@
     padding: 5rem;
 }
 
+@media screen and (max-width: 768px){
+    .email {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
 .social-icons {
     display: flex;
     width: 10rem;

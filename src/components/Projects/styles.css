@@ -15,6 +15,13 @@
     padding: 2rem 0rem ;
 }
 
+@media screen and (max-width: 768px) {
+    .project__title {
+        font-size: 3rem;
+    }
+
+}
+
 .project__list{
     width: 90%;
     margin: 1rem auto;

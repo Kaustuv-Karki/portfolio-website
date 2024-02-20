@@ -4,6 +4,7 @@
     right: 10px;
     z-index: 50;
     cursor: pointer;
+    border-bottom: 2px solid white;
 }
 
 .mainlinks__cv{
@@ -15,11 +16,12 @@
 
 .mainlinks__icons{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .mainlinks__cv > p{
     color: white;
+    font-size: 1.5rem;
     font-family: 'El Messiri', sans-serif;
 }
 

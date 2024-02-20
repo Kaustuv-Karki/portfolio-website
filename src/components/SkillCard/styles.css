@@ -5,3 +5,18 @@
 .skills__cardimage{
     height: 100px;
 }
+
+@media screen and (max-width: 1024px) {
+    .skills__cardimage {
+        height: 80px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills__cardimage {
+        height: 60px;
+    }
+
+}

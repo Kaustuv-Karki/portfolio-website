@@ -13,6 +13,12 @@
     text-align: center;
     padding: 3rem 0rem ;
 }
+@media screen and (max-width: 768px) {
+    .skills__header {
+        font-size: 3rem;
+    }
+
+}
 
 .skills__table{
     display: flex;

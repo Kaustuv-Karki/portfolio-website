@@ -5,6 +5,7 @@
     z-index: 50;
     cursor: pointer;
     border-bottom: 2px solid white;
+    animation: appear 3s ease-in-out;
 }
 
 .mainlinks__cv{
@@ -28,4 +29,18 @@
 a{
     text-decoration: none;
     color: white;
+}
+
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }

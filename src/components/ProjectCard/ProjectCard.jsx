@@ -31,9 +31,12 @@ const ProjectCard = ({ project, imgUrl }) => {
         <p className="projectcard__stacks">
           {project?.tags.map((tag, index) => {
             return (
-              <span key={index} className="projectcard__stack">
-                {tag} {index < project.tags.length - 1 && ","} &nbsp;
-              </span>
+              <>
+                <span key={index} className="projectcard__stack">
+                  {tag}
+                </span>
+                {index < project.tags.length - 1 && ", "}
+              </>
             );
           })}
         </p>

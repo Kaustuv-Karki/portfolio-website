@@ -1,6 +1,6 @@
 .projectcard__main{
     padding: 2rem 2rem;
-    width: 90%;
+    width: 95%;
     max-width: 600px;
     height: 700px;
     display: flex;
@@ -73,6 +73,11 @@
     font-style: italic;
     color: white;
     padding-bottom: 0.5rem;
+    
+}
+
+.projectcard__stack{
+    text-decoration: underline;
 }
 
 .projectcard__iconimage{
@@ -91,4 +96,34 @@
     color: white;
     font-size: 1.4rem;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .projectcard__main{
+        height: fit-content;
+    }
+    .projectcard__header > h2{
+        font-size: 1.5rem;
+    }
+    .projectcard__header > p {
+        font-size: 0.8rem;
+    }
+    .projectcard__description{
+        font-size: 0.8rem;
+    }
+    .projectcard__stacks{
+        font-size: 0.8rem;
+    }
+    .projectcard__iconimage{
+        height: 15px;
+    }
+    .projectcard__icons{
+        margin-left: 1rem;
+    }
+    .projectcard__iconinside{
+        font-size: 1.2rem;
+    }
+    
 }

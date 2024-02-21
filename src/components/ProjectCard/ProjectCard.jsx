@@ -5,7 +5,9 @@ import Github from "../../../public/Images/Skills/github_white.png";
 const ProjectCard = ({ project, imgUrl }) => {
   return (
     <div className="projectcard__main">
-      <img className="projectcard__image" src={imgUrl} alt="project" />
+      <div className="projectcard__imagecontainer">
+        <img className="projectcard__image" src={imgUrl} alt="project" />
+      </div>
       <div className="projectcard__text">
         <div className="projectcard__header">
           <h2>{project?.title}</h2>

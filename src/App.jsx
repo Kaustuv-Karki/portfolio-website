@@ -1,5 +1,5 @@
 import "./App.css";
-import Cursor from "./components/Cursor/Cursor";
+// import Cursor from "./components/Cursor/Cursor";
 import Footer from "./components/Footer/Footer";
 import LandingPage from "./components/LandingPage/LandingPage";
 import MainLinks from "./components/MainLinks/MainLinks";

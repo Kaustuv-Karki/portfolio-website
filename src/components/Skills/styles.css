@@ -6,13 +6,23 @@
 }
 
 .skills__header{
-    color: white;
+    color: #171717;
+    width: fit-content;
+    margin: 0px auto;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-family: 'Paytone One', sans-serif;
     font-size: 5rem;
     font-weight: 300;
     text-align: center;
     padding: 3rem 0rem ;
 }
+
+.skills__header:hover{
+    color: white;
+    text-shadow: none;
+    transition: 500ms all ease;
+}
+
 @media screen and (max-width: 768px) {
     .skills__header {
         font-size: 3rem;

@@ -7,12 +7,21 @@
 }
 
 .project__title{
-    color: white;
+    color: #171717;
+    width: fit-content;
+    margin: 0px auto;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-family: 'Paytone One', sans-serif;
     font-size: 5rem;
     font-weight: 300;
     text-align: center;
     padding: 2rem 0rem ;
+}
+
+.project__title:hover{
+    color: white;
+    text-shadow: none;
+    transition: 500ms all ease;
 }
 
 @media screen and (max-width: 768px) {

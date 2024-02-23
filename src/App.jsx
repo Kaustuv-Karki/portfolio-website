@@ -10,7 +10,7 @@ function App() {
     <>
       {/* <Cursor /> */}
       <div className="app ">
-        <MainLinks />
+        {/* <MainLinks /> */}
         <LandingPage />
         <MainPage />
         <Footer />

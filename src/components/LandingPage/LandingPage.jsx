@@ -10,6 +10,46 @@ import { motion } from "framer-motion";
 // import {MdArrowDownward} from 'react-icons/md'
 import { FaArrowDown } from "react-icons/fa";
 
+const TypingAnimation = ({ list }) => {
+  const [index, setIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(list[0]);
+
+  useEffect(() => {
+    const typingInterval = setInterval(() => {
+      if (index < list.length - 1) {
+        setIndex(index + 1);
+      } else {
+        setIndex(0);
+      }
+    }, 4000); // Change this value to adjust the typing speed
+
+    return () => clearInterval(typingInterval);
+  }, [index, list]);
+
+  useEffect(() => {
+    const typingText = list[index];
+    let charIndex = 0;
+
+    const typingInterval = setInterval(() => {
+      setCurrentText(typingText.substring(0, charIndex));
+      charIndex++;
+
+      if (charIndex > typingText.length) {
+        clearInterval(typingInterval);
+        setTimeout(() => {
+          setIndex((prevIndex) =>
+            prevIndex < list.length - 1 ? prevIndex + 1 : 0
+          );
+        }, 1000); // Change this value to adjust the pause between texts
+      }
+    }, 100); // Change this value to adjust the typing speed
+
+    return () => clearInterval(typingInterval);
+  }, [index, list]);
+
+  return <div>{currentText}</div>;
+};
+
 const LandingPage = () => {
   const [showOpening, setShowOpening] = useState(true);
 
@@ -21,6 +61,7 @@ const LandingPage = () => {
   }, []);
 
   console.log(showOpening);
+  const list = ["FrontEnd Developer", "UI/UX Designer"];
 
   return (
     <div className="full">
@@ -39,7 +80,8 @@ const LandingPage = () => {
             }}
             className="text">
             <h1 className="text__h1">Kaustuv Karki</h1>
-            <p className="text__p">SOFTWARE DEVELOPER / DESIGNER</p>
+            {/* <p className="text__p">SOFTWARE DEVELOPER / DESIGNER</p> */}
+            <p className="text__p">{<TypingAnimation list={list} />}</p>
           </motion.div>
           <div className="main-container">
             <motion.img

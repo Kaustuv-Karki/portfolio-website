@@ -72,7 +72,7 @@ const frontEndSkills = [
 const Skills = () => {
   return (
     <div className="skills__main">
-      <h1 className="skills__header">Skills</h1>
+      <h1 className="skills__header bouncy">Skills</h1>
       <div className="skills__table">
         {frontEndSkills.map((skill, index) => (
           <SkillCard key={index} name={skill.name} image={skill.image} />

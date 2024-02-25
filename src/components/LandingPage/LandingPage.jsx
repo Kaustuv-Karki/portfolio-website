@@ -9,6 +9,7 @@ import Opening from "../Opening/Opening";
 import { motion } from "framer-motion";
 // import {MdArrowDownward} from 'react-icons/md'
 import { FaArrowDown } from "react-icons/fa";
+import Scrambling from "../../utls/Scrambling";
 
 const TypingAnimation = ({ list }) => {
   const [index, setIndex] = useState(0);
@@ -51,6 +52,20 @@ const TypingAnimation = ({ list }) => {
 };
 
 const LandingPage = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  console.log(screenWidth);
   const [showOpening, setShowOpening] = useState(true);
 
   useEffect(() => {
@@ -79,9 +94,22 @@ const LandingPage = () => {
               delay: 0.7,
             }}
             className="text">
-            <h1 className="text__h1">Kaustuv Karki</h1>
+            {screenWidth < 1000 ? (
+              <h1 className="text__h1">Kaustuv Karki</h1>
+            ) : (
+              <div>
+                <Scrambling text="KAUSTUV" />
+                <Scrambling text="KARKI" />
+              </div>
+            )}
             {/* <p className="text__p">SOFTWARE DEVELOPER / DESIGNER</p> */}
             <p className="text__p">{<TypingAnimation list={list} />}</p>
+            {/* 
+                        <div>
+              <Scrambling text="KAUSTUV" />
+              <Scrambling text="KARKI" />
+            </div>
+            */}
           </motion.div>
           <div className="main-container">
             <motion.img

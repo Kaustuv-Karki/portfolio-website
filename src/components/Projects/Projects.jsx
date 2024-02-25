@@ -18,7 +18,7 @@ const Projects = () => {
     });
   }, []);
 
-  console.log("Projcets", projects[0]);
+  // console.log("Projcets", projects[0]);
 
   return (
     <div className="project__main">

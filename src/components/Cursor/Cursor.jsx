@@ -10,7 +10,7 @@ const Cursor = () => {
     setMousePosition({ x, y });
   };
 
-  console.log(mousePosition);
+  // console.log(mousePosition);
 
   useEffect(() => {
     document.addEventListener("mousemove", onMouseMove);

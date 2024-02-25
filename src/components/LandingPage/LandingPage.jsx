@@ -65,7 +65,7 @@ const LandingPage = () => {
     };
   }, []);
 
-  console.log(screenWidth);
+  // console.log(screenWidth);
   const [showOpening, setShowOpening] = useState(true);
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const LandingPage = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  console.log(showOpening);
+  // console.log(showOpening);
   const list = ["FrontEnd Developer", "UI/UX Designer"];
 
   return (

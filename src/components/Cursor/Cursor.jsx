@@ -25,6 +25,7 @@ const Cursor = () => {
   return (
     <>
       <div style={{ left: `${x}px`, top: `${y}px` }} className="ring"></div>
+      <div className="blur"></div>
     </>
   );
 };

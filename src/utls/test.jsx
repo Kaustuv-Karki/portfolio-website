@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 import "./styles.css";
 
 export default function Scrambling({ text }) {
-  const [isMouseOver, setIsMouseOver] = useState(false);
+  const [intervalId, setIntervalId] = useState(null);
 
   const handleMouseOver = (event) => {
     let iteration = 0;
+
+    clearInterval(intervalId);
 
     const id = setInterval(() => {
       event.target.innerText = event.target.innerText
@@ -27,11 +29,11 @@ export default function Scrambling({ text }) {
       iteration += 1;
     }, 100); // <-- Increased interval duration
 
-    setIsMouseOver(true);
+    setIntervalId(id);
   };
 
   const handleMouseLeave = () => {
-    setIsMouseOver(false);
+    clearInterval(intervalId);
   };
 
   return (

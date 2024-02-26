@@ -94,7 +94,7 @@ const LandingPage = () => {
               delay: 0.7,
             }}
             className="text">
-            {screenWidth < 1000 ? (
+            {screenWidth < 1200 ? (
               <h1 className="text__h1">Kaustuv Karki</h1>
             ) : (
               <div>

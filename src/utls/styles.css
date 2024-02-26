@@ -1,10 +1,10 @@
 .h1-text:hover {
     background-color: white;
-    color: black;
+    color: #071629;
 }
 
 .h1-text{
-    padding: 1rem 2rem;
+    padding: 1rem 0rem;
     padding-left: 0;
     border-radius: 10px;
     width: fit-content;

@@ -13,19 +13,22 @@
     font-family: "Paytone One";
     text-decoration: underline;
     cursor: pointer;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 @media screen and (max-width: 768px){
     .email {
         font-size: 1.5rem;
-        padding: 2rem;
+        padding: 0 0 2rem 0rem;
     }
     .social-icons {
         font-size: 1.4rem !important;
     }
     .github__icon {
         font-size: 1.7rem !important;
+    }
+    .footer__header {
+        font-size: 3rem !important;
     }
 
 }
@@ -43,5 +46,14 @@
     margin-top: -10px;
     color: white;
     font-size: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0rem;
+}
+
+.footer__header{
+    font-size: 5rem;
+    padding: 2rem 0 0 0;
+    /* color: white; */
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-family: 'Paytone One', sans-serif;
+
 }

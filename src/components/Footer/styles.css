@@ -55,5 +55,10 @@
     /* color: white; */
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-family: 'Paytone One', sans-serif;
+}
 
+.footer__header:hover{
+    color: white;
+    text-shadow: none;
+    transition: 500ms all ease;
 }

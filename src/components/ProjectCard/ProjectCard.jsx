@@ -1,5 +1,4 @@
 import "./styles.css";
-import Project from "../../assets/project-images/project-1.png";
 import { IoOpenOutline } from "react-icons/io5";
 import Github from "../../../public/Images/Skills/github_white.png";
 const ProjectCard = ({ project, imgUrl }) => {
